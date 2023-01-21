@@ -1,9 +1,8 @@
-
-
 terraform {
   backend "s3" {
-    bucket = "euran-terraform-statefile"
+    key = "eks/cluster_name/statefile"
+    bucket = "testrdsdeme"
     key = "eks/ngg_cluster_name/statefile"
-    region = "ap-south-1"
+    region = "us-east-1"
   }
 } 
